@@ -22,7 +22,7 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./WebApplication1.sln
+        run: dotnet restore ./WebApplication1/WebApplication1.sln
 
       - name: Build project
-        run: dotnet build ./WebApplication1.sln --configuration Release --no-restore
+        run: dotnet build ./WebApplication1/WebApplication1.sln --configuration Release --no-restore
