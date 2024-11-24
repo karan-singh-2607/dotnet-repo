@@ -26,3 +26,8 @@ jobs:
 
       - name: Build project
         run: dotnet build ./WebApplication1/WebApplication1.sln --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish ./WebApplication1/WebApplication1.sln --configuration Release --no-build
+
+        
